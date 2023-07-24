@@ -1,0 +1,149 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+
+  --bg-cta: #2acfcf;
+  --line: hsl(258, 7%, 63%);
+  --bg-header: hsl(0, 0%, 98%);
+  --bg-alt: hsl(257, 27%, 26%);
+  --color-text: hsl(233, 8%, 62%);
+  --bg-mid: hsl(225, 33%, 95%);
+  --color-header: hsl(255, 11%, 22%);
+  --color-darktext: #232127;
+}
+
+#root,
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  height: 100vh;
+}
+
+
+
+* {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: all 300ms ease;
+  font-size: 18px
+}
+
+.p__text {
+  color: var(--color-text);
+  line-height: 30px;
+  margin: 0.8rem 0;
+  font-weight: 700;
+}
+
+
+.cta__button {
+  padding: 0.7rem 1.7rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  background: var(--bg-cta);
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta__button:hover {
+  background: hsl(180, 90%, 52%)
+}
+
+
+
+h1,
+h2,
+h3,
+h5,
+h4,
+h6 {
+  color: var(--color-header);
+}
+
+.section__padding {
+  padding: 4rem 7rem;
+}
+
+.section__margin {
+  margin: 4rem 7rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:1050px) {
+
+  .section__padding {
+    padding: 2rem 3rem;
+  }
+
+  .section__margin {
+    margin: 5rem 3rem;
+  }
+
+
+}
+
+@media screen and (max-width:700px) {
+
+  .section__padding {
+    padding: 2rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+
+
+}
+
+@media screen and (max-width:550px) {
+
+  .section__padding {
+    padding: 2rem 1rem;
+  }
+
+  .section__margin {
+    margin: 4rem 1rem;
+  }
+
+
+}

@@ -1,0 +1,38 @@
+.short__cta {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    background: url('../../assets/bg-boost-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: var(--bg-alt);
+}
+
+.short__cta h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.short__cta .cta__button {
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 0.9rem 3rem;
+}
+
+@media screen and (max-width:700px) {
+    .short__cta {
+        background: url('../../assets/bg-boost-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: var(--bg-alt);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .short__cta h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,128 @@
+.short__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.short__header-text {
+    width: 630px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+}
+
+.short__header-text h1 {
+    font-weight: 800;
+    font-size: 4.3rem;
+    line-height: 4.9rem;
+    margin: 5px 0;
+}
+
+.short__header-text p {
+    font-size: 1.45rem;
+    line-height: 35px;
+    margin: 0.8rem 0;
+}
+
+
+
+
+
+.short__header-text .cta__button {
+    margin: 1.5rem 0 0;
+    width: fit-content;
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem;
+}
+
+.short__header-image {
+    top: 2rem;
+    position: absolute;
+    height: 500px;
+    right: 0;
+    transform: translateX(100px);
+}
+
+
+@media screen and (max-width: 1350px) {
+    .short__header-text {
+        width: 550px;
+    }
+
+    .short__header-text h1 {
+        font-size: 3.8rem;
+        line-height: 4.3rem;
+    }
+
+    .short__header-text p {
+        font-size: 1.35rem;
+        line-height: 35px;
+    }
+
+    .short__header-image {
+        height: 430px;
+        transform: translateX(125px);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .short__header {
+        flex-flow: column-reverse;
+        row-gap: 100px;
+    }
+
+    .short__header-text {
+        width: min(600px, 100%);
+        text-align: center;
+        align-items: center;
+    }
+
+    .short__header-text h1 {
+        font-size: 3.8rem;
+        line-height: 4.3rem;
+    }
+
+    .short__header-text p {
+        font-size: 1.35rem;
+        line-height: 35px;
+    }
+
+    .short__header-image {
+        width: min(600px, 100%);
+        height: fit-content;
+        transform: translateX(0px);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .short__header-text h1 {
+        font-size: 3.5rem;
+        line-height: 3.9rem;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .short__header-text h1 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .short__header-text h1 {
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+    }
+
+    .short__header-text p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}
